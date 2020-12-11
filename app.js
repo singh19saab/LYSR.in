@@ -25,7 +25,7 @@ app.get('/launchpad' ,(req,res) =>{
 })
 app.get('/rocket' ,(req,res) =>{
     res.render('rocket' , {
-        title: 'Rocket Parts'
+        title: 'Rocket-Parts'
     })
 })
 var port=process.env.port | 3005;

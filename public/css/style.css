@@ -1911,18 +1911,6 @@ html {
     -moz-background-size: cover !important;
     background-size: cover !important;
   }
-  .bgimg-vastra-md {
-    background: url(../images/landing/Vastra.png) no-repeat content-box;
-    -webkit-background-size: contain !important;
-    -moz-background-size: contain !important;
-    background-size: contain !important;
-  }
-  .bgimg-vastra1 {
-    background: url(../images/landing/bgimg\ vastra.png) no-repeat;
-    -webkit-background-size: cover !important;
-    -moz-background-size: cover !important;
-    background-size: cover !important;
-  }
   .bgimg-about {
     background: url(../images/about/bgimg.png) no-repeat center;
     -webkit-background-size: cover !important;
