@@ -13,6 +13,11 @@ app.use('/image', express.static(__dirname + 'public/image'));
 app.set('views', './views');
 app.set('view engine', 'ejs');
 
+app.get('/' ,(req,res) =>{
+    res.render('index' , {
+        title: 'Home'
+    })
+});
 app.get('/satellite' ,(req,res) =>{
     res.render('satellite' , {
         title: 'Satellite Parts'
@@ -27,7 +32,12 @@ app.get('/rocket' ,(req,res) =>{
     res.render('rocket' , {
         title: 'Rocket-Parts'
     })
-})
+});
+app.get('/lyron' ,(req,res) =>{
+    res.render('lyron' , {
+        title: 'Lyron'
+    })
+});
 var port=process.env.port | 3005;
 
 app.listen(port, ()=>{

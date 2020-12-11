@@ -1,0 +1,42 @@
+.top-left {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    width: 100%;
+}
+.bottom-right {
+    position: absolute;
+    top: 65%;
+    right: 10%;
+    width: 25%;
+}
+.floating-div {
+    height: 250px;
+    width: 80%;
+    border: 5px solid white;
+}
+h1 {
+    width: 190px;
+    margin-top: -4.4%;
+    margin-left: 8%;
+    padding-left: .8rem;
+    background-image: url(../image/text-bgimg.png);
+    color: white;
+    font-size: 60px;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+.title{
+    font-size: 120px;
+    text-align: center;
+    margin-top: -2.2%;
+    font-weight: 600;
+    color: white;
+}
+.border-text{
+    font-size: 70px;
+    color:#fff;
+    padding-left: 10%;
+    font-weight: 600;
+    font-family:'Titillium web';
+}
