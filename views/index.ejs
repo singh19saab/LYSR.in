@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LYSR | <%=title%></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/landing.css">
+    <link rel="stylesheet" href="/css/aos.css">
+    <link rel="stylesheet" href="/css/nav.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
 
@@ -21,24 +24,34 @@
 </head>
 
 <body>
-    <section>
+    <%- include('./partials/nav.ejs') %>
+    <section class="ly-hide-small ly-hide-medium">
         <div class="container-box">
             <img src="image/landing.png" alt="" width="100%" height="auto">
             <div class="top-left">
-                <div class="floating-div">
+                <div class="floating-div" data-aos='fade-down'>
                     <h1>Lycan</h1>
-                    <h2 class="title">Space Research</h2>
+                    <div data-aos='fade-left' style="transition-delay: 100ms;">
+                        <h2 class="title">Space Research</h2>
+                    </div>
                 </div>
             </div>
-            <div class="bottom-right">
+            <div class="bottom-right" data-aos='slide-up' style="transition-delay: 200ms;">
                 <h2 class="border-text">
                     Go Beyond.
                 </h2>
             </div>
         </div>
-        
-
     </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        })
+    </script>
 </body>
 
 </html>
