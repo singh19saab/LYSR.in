@@ -15,7 +15,7 @@
     width: 80%;
     border: 5px solid white;
 }
-h1 {
+.border-text {
     width: 190px;
     margin-top: -4.4%;
     margin-left: 8%;
@@ -33,10 +33,80 @@ h1 {
     font-weight: 600;
     color: white;
 }
-.border-text{
+.bottom-text{
     font-size: 70px;
     color:#fff;
     padding-left: 10%;
     font-weight: 600;
     font-family:'Titillium web';
+}
+@media (max-width:500px){
+    .top-left{
+        top: 30%;
+        left: 9%;
+        width: 90%;
+    }
+    .floating-div {
+        height: 250px;
+        width: 92%;
+        border: 5px solid white;
+    }
+    .border-text {
+        width: 115px;
+        margin-top: -8.4%;
+        font-size: 32px;
+        letter-spacing: 2px;
+    }
+    .title{
+        font-size: 60px;
+        text-align: center;
+        margin-top: -2.2%;
+        font-weight: 600;
+        color: white;
+    }
+    .bottom-right {
+        top: 77%;
+        right: 0%;
+        width: 50%;
+    }
+    .bottom-text{
+        font-size: 30px;
+        color:#fff;
+        padding-left: 10%;
+    }
+}
+@media (min-width:500px) and (max-width:969px){
+    .top-left{
+        top: 35%;
+        left: 9%;
+        width: 90%;
+    }
+    .floating-div {
+        height: 280px;
+        width: 92%;
+        border: 5px solid white;
+    }
+    .border-text {
+        width: 160px;
+        margin-top: -6.5%;
+        font-size: 50px;
+        letter-spacing: 3px;
+    }
+    .title{
+        font-size: 80px;
+        text-align: center;
+        margin-top: 8%;
+        font-weight: 600;
+        color: white;
+    }
+    .bottom-right {
+        top: 60%;
+        right: 0%;
+        width: 40%;
+    }
+    .bottom-text{
+        font-size: 50px;
+        color:#fff;
+        padding-left: 10%;
+    }
 }

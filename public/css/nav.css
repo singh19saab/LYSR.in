@@ -14,11 +14,10 @@ body {
 }
 nav {
   position: fixed;
-  z-index: 1000;
+  z-index: 10000000001;
   width: 90%;
   margin: 1% 5% 0 5%;
-  background: #fff;
-  border-radius: 20px;
+  border-radius: 25px;
 }
 nav:after {
   content: "";
@@ -41,12 +40,12 @@ nav ul {
 nav ul li {
   float: left;
   display: inline-block;
-  background: #fff;
+  background: transparent;
   margin: 0 5px;
 }
 
 nav ul li a {
-  color: #776f9e;
+  color: #574f7e;
   text-decoration: none;
   line-height: 70px;
   font-size: 24px;
@@ -54,21 +53,18 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #304e6d;
-  background-color: white;
+  color: #000;
   text-decoration: none;
-  border-radius: 5px;
-  box-shadow: 0 0 5px #568ec7, 0 0 5px #304e6d;
 }
 nav ul ul li a:hover {
   color: #fff;
-  background-color: #304e6d;
+  background:linear-gradient(to left,rgb(93, 91, 107) 0%,rgb(18, 4, 109) 100% );
   box-shadow: none;
 }
 nav ul ul {
   position: absolute;
   top: 130px;
-  border-top: 3px solid #304e6d;
+  border-top: 3px solid rgb(51,43,100);
   opacity: 0;
   visibility: hidden;
   transition: top 0.5s;
@@ -107,27 +103,55 @@ nav ul ul ul li {
 input {
   display: none;
 }
+header,
+.blurheader {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
+  height: 70px;
+  position: fixed;
+  width: 90%;
+  margin: 1% 5% 0 5%;
+  top: 0;
+  border-radius: 25px;
+  z-index: 10000000000;
+}
+.blurheader {
+  overflow: hidden;
+  z-index: 10000;
+  left: 0;
+}
+#canvas {
+  opacity: .8;
+  z-index: 100;
+  position: absolute;
+  display: block;
+  top: 3px;
+}
 @media all and (max-width: 969px) {
-  nav {
+  nav,header, .blurheader {
+    position: fixed;
     margin: 0;
     width: 100%;
     border-radius: 0;
   }
   nav ul {
-     
     margin-left: 0px;
     float: left;
-    width: 1005;
+    width: 100%;
   }
   nav .logo {
     padding-left: 20px;
     padding-bottom: 10px;
-    width: 30%;
   }
   nav ul li,
   nav ul ul li {
     display: block;
     width: 100%;
+    margin: 0;
+    margin-top: -5px;
+  }
+  nav ul li label{
+    background-color: white;
   }
   nav ul ul {
     top: 60px;
@@ -159,16 +183,16 @@ input {
     cursor: pointer;
   }
   .show:hover {
-    color: #304e6d;
+    color: #181147;
   }
   .icon {
     display: block;
-    color: #304e6d;
+    color: rgb(172, 170, 179);
     position: absolute;
     top: 20px;
-    right: 50px;
+    right: 30px;
     line-height: 70px;
-    font-size: 25px;
+    font-size: 35px;
     cursor: pointer;
   }
   nav ul li a:hover {
