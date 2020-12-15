@@ -58,7 +58,7 @@ nav ul li a:hover {
 }
 nav ul ul li a:hover {
   color: #fff;
-  background:linear-gradient(to left,rgb(93, 91, 107) 0%,rgb(18, 4, 109) 100% );
+  background:linear-gradient(to left,#70549d 0%,#3e2e6c 100% );
   box-shadow: none;
 }
 nav ul ul {
@@ -86,7 +86,8 @@ nav ul ul li a {
   line-height: 50px;
   font-size: 18px;
   display: block;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
   color: black;
 }
 nav ul ul ul li {

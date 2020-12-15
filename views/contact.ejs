@@ -1,0 +1,107 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LYSR | <%=title%>
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/bootstrap4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/aos.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/contact.css">
+</head>
+
+<body>
+    <%- include('./partials/nav.ejs') %>
+        <section class="ly-hide-small">
+            <div class="container-box">
+                <img src="image/contact/contact-bg.png" alt="" width="100%" height="auto">
+                <div class="div-center">
+                    <div class="floating-div ly-card-4">
+                        <div class="row ly-padding-top-24">
+                            <div class="col-lg-5 col-md-5">
+                                <div class="header">
+                                    Get in touch
+                                </div>
+                                <div class="row ly-padding-top-32">
+                                    <div class="col-lg-4 col-md-4">
+                                        <div class="icons">
+                                            <img src="image/contact/email (1).png" alt="" width="40%" height="auto">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8">
+                                        <p class="ly-large">rahul@Lysr.in</p>
+                                    </div>
+                                </div>
+                                <div class="row ly-padding-top-24">
+                                    <div class="col-lg-4 col-md-4">
+                                        <div class="icons" style="padding-top: 15%;">
+                                            <img src="image/contact/call.png" alt="" width="40%" height="auto">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8">
+                                        <p class="ly-large">+91 9591807979 <br> +91 8871561036</p>
+                                    </div>
+                                </div>
+                                <div class="row ly-padding-top-32">
+                                    <div class="col-lg-4 col-md-4">
+                                        <div class="icons" style="padding-top: 10%;">
+                                            <img src="image/contact/location.png" alt="" width="40%" height="auto">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8">
+                                        <p class="ly-large">
+                                            IKP Eden, Koramangala,
+                                            Bengaluru, Karnataka,
+                                            India, 560029. <br>
+                                            Landmark : Opp Forum Mall
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2">
+                                <div class="ly-image ly-center ly-padding-top-32">
+                                    <img src="image/contact/Line 37.png" alt="" width="5px" height="490px">
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-5" style="padding-right: 10%;padding-top: 8%;">
+                                <form autocomplete="off">
+                                    <div class="form-group ly-padding-16">
+                                        <input type="text" class="form-control" placeholder="Enter Name" id="name">
+                                    </div>
+                                    <div class="form-group ly-padding-16">
+                                        <input type="email" class="form-control" placeholder="Enter Email" id="mail">
+                                    </div>
+                                    <div class="form-group ly-padding-16">
+                                        <input type="number" class="form-control" placeholder="Enter Phone" id="phn">
+                                    </div>
+                                    <div class="form-group ly-padding-16">
+                                        <input type="txt" class="form-control" placeholder="Enter message" id="msg"
+                                            style="height: 100px;">
+                                    </div>
+                                    <div class="ly-padding-16">
+                                        <button type="submit " class="btn btn-primary ly-right">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <%- include('./partials/footer.ejs') %>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+            <script src="/js/bootstrap.min.js"></script>
+            <script src="/js/aos.js"></script>
+            <script>
+                AOS.init({
+                    duration: 1200,
+                })
+            </script>
+</body>
+
+</html>

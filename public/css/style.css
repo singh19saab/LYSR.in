@@ -1908,57 +1908,11 @@ a {
 .my-button-tab:hover {
   opacity: 0.6;
 }
-
-.bgimg-vastra {
-  background: url(../images/landing/Vastra.png) no-repeat content-box;
-  -webkit-background-size: cover !important;
-  -moz-background-size: cover !important;
-  background-size: cover !important;
-}
-.bgimg-about {
-  background: url(../images/about/bgimg.png) no-repeat center;
-  -webkit-background-size: cover !important;
-  -moz-background-size: cover !important;
-  background-size: cover !important;
-}
 .bgimg-clothing2 {
   background: url(../images/clothing/bg-img2.png) no-repeat center center fixed;
   -webkit-background-size: cover !important;
   -moz-background-size: cover !important;
   background-size: contain !important;
-}
-.bgimg-clothing1 {
-  background: url(../images/clothing/bg-img1.png) no-repeat center center fixed;
-  -webkit-background-size: cover !important;
-  -moz-background-size: cover !important;
-  background-size: contain !important;
-}
-.footer-nav {
-  text-decoration: none;
-  font-size: 26px;
-  text-align: center;
-  padding-top: 30%;
-  text-transform: capitalize;
-  color: #d5c9b7;
-}
-.footer-nav a {
-  padding-left: 0%;
-}
-.footer-nav a:hover {
-  color: #000;
-}
-.footer-nav-mob {
-  text-decoration: none;
-  font-size: 22px;
-  padding: 1rem 2rem 1rem 0rem;
-  text-align: end;
-  text-transform: capitalize;
-  color: #b0b0b0;
-}
-
-.footer-nav-mob:hover {
-  color: white;
-  text-decoration: none;
 }
 .img-hover-zoom {
   overflow: hidden; /* Removing this will break the effects */
@@ -1982,16 +1936,4 @@ a {
 .img-hover-zoom--brightness:hover img {
   filter: brightness(100%);
   transform: scale(1.1);
-}
-.social {
-  position: fixed;
-  top: 20%;
-  left: 3%;
-  display: block;
-  z-index: 999;
-}
-.social i {
-  font-size: 40px;
-  padding: 0.5rem 0;
-  color: #a9a9a9;
 }

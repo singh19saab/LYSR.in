@@ -6,6 +6,8 @@
     <title>LYSR | <%=title%>
     </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="/bootstrap4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/aos.css">
     <link rel="stylesheet" href="/css/nav.css">
@@ -18,9 +20,13 @@
         <!--xlarge screen-->
         <section class="ly-hide-small ly-hide-medium ly-hide-large ">
             <div class="container-box">
-                <img src="image/launch pad.png" alt="" width="100%" height="auto">
-                <div class="top-left-xl">
-                    <h1 class="landing-text-xl">Launchpad</h1>
+                <img src="image/launchpad/LAUNCH PAD BACKGROUND.png" alt="" width="100%" height="auto">
+                <img src="image/launchpad/launch pad.png" alt="" width="40%" height="auto" class="launch-bgimg"
+                    data-aos=fade-right style="transition-delay: 400ms;">
+                <img src="image/launchpad/LAUNCH PAD ROCKET.png" alt="" width="20%" height="auto" class="rocket-bgimg"
+                    data-aos=slide-up style="transition-delay: 1000ms;">
+                <div class="top-left">
+                    <h1 class="landing-text">Launchpad</h1>
                     <p class="ly-xxlarge">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sapiente enim eos
                         libero est, expedita, unde
                         magni odit consequatur repellat voluptatibus doloribus cum corporis minus illum dolorem,
@@ -31,7 +37,7 @@
                 </div>
             </div>
             <div class="ly-container ly-padding-top-32">
-                <h2 class="body-title-xl">Lorem Ipsum</h2>
+                <h2 class="body-title">Lorem Ipsum</h2>
                 <p class="ly-xxlarge" style="padding: 2% 8%;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Hic sapiente enim eos libero est, expedita, unde
                     magni odit consequatur repellat voluptatibus doloribus cum corporis minus illum dolorem, laboriosam
@@ -42,7 +48,11 @@
         <!--large screen-->
         <section class="ly-hide-small ly-hide-medium ly-hide-xlarge">
             <div class="container-box">
-                <img src="image/launch pad.png" alt="" width="100%" height="auto">
+                <img src="image/launchpad/LAUNCH PAD BACKGROUND.png" alt="" width="100%" height="auto">
+                <img src="image/launchpad/launch pad.png" alt="" width="40%" height="auto" class="launch-bgimg"
+                    data-aos=fade-right style="transition-delay: 400ms;">
+                <img src="image/launchpad/LAUNCH PAD ROCKET.png" alt="" width="20%" height="auto" class="rocket-bgimg"
+                    data-aos=fade-up style="transition-delay: 1300ms;">
                 <div class="top-left">
                     <h1 class="landing-text">Launchpad</h1>
                     <p class="ly-xlarge">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sapiente enim eos
@@ -111,6 +121,7 @@
                     veniam ea sapiente suscipit doloribus, consectetur id!</p>
             </div>
         </section>
+        <%- include('./partials/footer.ejs') %>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="/js/bootstrap.min.js"></script>

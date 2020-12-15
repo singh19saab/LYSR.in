@@ -38,6 +38,11 @@ app.get('/lyron' ,(req,res) =>{
         title: 'Lyron'
     })
 });
+app.get('/contact' ,(req,res) =>{
+    res.render('contact' , {
+        title: 'Contact'
+    })
+});
 var port=process.env.port | 3005;
 
 app.listen(port, ()=>{

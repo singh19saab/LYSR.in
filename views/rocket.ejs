@@ -1,57 +1,76 @@
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>LYSR | <%=title%></title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-        <link rel="stylesheet" href="/css/style.css">
-        <link rel="stylesheet" href="/css/aos.css">
-        <link rel="stylesheet" href="/css/nav.css">
-        <link rel="stylesheet" href="/css/rocket.css">
-    </head>
-    
-    <body>
-        <!--navbar-->
-        <%- include('./partials/nav.ejs') %>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LYSR | <%=title%>
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="/bootstrap4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/aos.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/rocket.css">
+</head>
+
+<body>
+    <!--navbar-->
+    <%- include('./partials/nav.ejs') %>
         <!--xlarge screen-->
         <section class="ly-hide-small ly-hide-medium ly-hide-large ">
             <div class="container-box">
-                <img src="image/rocketpart.png" alt="" width="100%" height="auto">
-                <div class="top-left-xl">
-                    <h1 class="landing-text-xl">Rocket Parts</h1>
-                    <p class="ly-xxlarge">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sapiente enim eos libero est, expedita, unde
-                        magni odit consequatur repellat voluptatibus doloribus cum corporis minus illum dolorem, laboriosam
-                        velit! Est voluptas ipsum architecto iure mollitia sint maxime totam numquam nemo odio earum atque
-                        veniam ea sapiente suscipit doloribus, consectetur id</p>
-                </div>
-            </div>
-            <div class="ly-container ly-padding-top-32">
-                <h2 class="body-title-xl">Lorem Ipsum</h2>
-                <p class="ly-xxlarge" style="padding: 2% 8%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sapiente enim eos libero est, expedita, unde
-                    magni odit consequatur repellat voluptatibus doloribus cum corporis minus illum dolorem, laboriosam
-                    velit! Est voluptas ipsum architecto iure mollitia sint maxime totam numquam nemo odio earum atque
-                    veniam ea sapiente suscipit doloribus, consectetur id!</p> 
-            </div>
-        </section>
-        <!--large screen-->
-        <section class="ly-hide-small ly-hide-medium ly-hide-xlarge">
-            <div class="container-box">
-                <img src="image/rocketpart.png" alt="" width="100%" height="auto">
+                <img src="image/rocket/ROCKET PARTS BACKGROUND.png" alt="" width="100%" height="auto">
+                <img src="image/rocket/rocket.png" alt="" width="25%" height="auto" class="rocket-bgimg"
+                    data-aos=fade-up-right style="transition-delay: 500ms;">
+                <img src="image/rocket/lines.png" alt="" width="10%" height="auto" class="line-bgimg"
+                    data-aos=fade-up-right style="transition-delay: 800ms;">
                 <div class="top-left">
                     <h1 class="landing-text">Rocket Parts</h1>
-                    <p class="ly-xlarge">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sapiente enim eos libero est, expedita, unde
-                        magni odit consequatur repellat voluptatibus doloribus cum corporis minus illum dolorem, laboriosam
-                        velit! Est voluptas ipsum architecto iure mollitia sint maxime totam numquam nemo odio earum atque
+                    <p class="ly-xxlarge">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sapiente enim eos
+                        libero est, expedita, unde
+                        magni odit consequatur repellat voluptatibus doloribus cum corporis minus illum dolorem,
+                        laboriosam
+                        velit! Est voluptas ipsum architecto iure mollitia sint maxime totam numquam nemo odio earum
+                        atque
                         veniam ea sapiente suscipit doloribus, consectetur id</p>
                 </div>
             </div>
             <div class="ly-container ly-padding-top-32">
                 <h2 class="body-title">Lorem Ipsum</h2>
-                <p class="ly-xlarge" style="padding: 2% 8%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sapiente enim eos libero est, expedita, unde
+                <p class="ly-xxlarge" style="padding: 2% 8%;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Hic sapiente enim eos libero est, expedita, unde
                     magni odit consequatur repellat voluptatibus doloribus cum corporis minus illum dolorem, laboriosam
                     velit! Est voluptas ipsum architecto iure mollitia sint maxime totam numquam nemo odio earum atque
-                    veniam ea sapiente suscipit doloribus, consectetur id!</p> 
+                    veniam ea sapiente suscipit doloribus, consectetur id!</p>
+            </div>
+        </section>
+        <!--large screen-->
+        <section class="ly-hide-small ly-hide-medium ly-hide-xlarge">
+            <div class="container-box">
+                <img src="image/rocket/ROCKET PARTS BACKGROUND.png" alt="" width="100%" height="auto">
+                <img src="image/rocket/rocket.png" alt="" width="25%" height="auto" class="rocket-bgimg"
+                    data-aos=fade-up-right style="transition-delay: 300ms;">
+                <img src="image/rocket/lines.png" alt="" width="10%" height="auto" class="line-bgimg"
+                    data-aos=fade-up-right style="transition-delay: 1000ms;">
+                <div class="top-left">
+                    <h1 class="landing-text">Rocket Parts</h1>
+                    <p class="ly-xlarge">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sapiente enim eos
+                        libero est, expedita, unde
+                        magni odit consequatur repellat voluptatibus doloribus cum corporis minus illum dolorem,
+                        laboriosam
+                        velit! Est voluptas ipsum architecto iure mollitia sint maxime totam numquam nemo odio earum
+                        atque
+                        veniam ea sapiente suscipit doloribus, consectetur id</p>
+                </div>
+            </div>
+            <div class="ly-container ly-padding-top-32">
+                <h2 class="body-title">Lorem Ipsum</h2>
+                <p class="ly-xlarge" style="padding: 2% 8%;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Hic sapiente enim eos libero est, expedita, unde
+                    magni odit consequatur repellat voluptatibus doloribus cum corporis minus illum dolorem, laboriosam
+                    velit! Est voluptas ipsum architecto iure mollitia sint maxime totam numquam nemo odio earum atque
+                    veniam ea sapiente suscipit doloribus, consectetur id!</p>
             </div>
         </section>
         <!--tab screen-->
@@ -60,18 +79,22 @@
                 <img src="image/rocketpart.png" alt="" width="100%" height="auto">
                 <div class="top-left-tab">
                     <h1 class="landing-text-tab">Rocket Parts</h1>
-                    <p class="ly-large">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sapiente enim eos libero est, expedita, unde
-                        magni odit consequatur repellat voluptatibus doloribus cum corporis minus illum dolorem, laboriosam
-                        velit! Est voluptas ipsum architecto iure mollitia sint maxime totam numquam nemo odio earum atque
+                    <p class="ly-large">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sapiente enim eos
+                        libero est, expedita, unde
+                        magni odit consequatur repellat voluptatibus doloribus cum corporis minus illum dolorem,
+                        laboriosam
+                        velit! Est voluptas ipsum architecto iure mollitia sint maxime totam numquam nemo odio earum
+                        atque
                         veniam ea sapiente suscipit doloribus, consectetur id</p>
                 </div>
             </div>
             <div class="ly-container ly-padding-top-32">
                 <h2 class="body-title-tab">Lorem Ipsum</h2>
-                <p class="ly-large" style="padding: 2% 6%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sapiente enim eos libero est, expedita, unde
+                <p class="ly-large" style="padding: 2% 6%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                    sapiente enim eos libero est, expedita, unde
                     magni odit consequatur repellat voluptatibus doloribus cum corporis minus illum dolorem, laboriosam
                     velit! Est voluptas ipsum architecto iure mollitia sint maxime totam numquam nemo odio earum atque
-                    veniam ea sapiente suscipit doloribus, consectetur id!</p> 
+                    veniam ea sapiente suscipit doloribus, consectetur id!</p>
             </div>
         </section>
         <!--mobile screen-->
@@ -80,20 +103,25 @@
                 <img src="image/mob/rocket.png" alt="" width="100%" height="auto">
                 <div class="top-left-mob">
                     <h1 class="landing-text-mob">Rocket Parts</h1>
-                    <p class="ly-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sapiente enim eos libero est, expedita, unde
-                        magni odit consequatur repellat voluptatibus doloribus cum corporis minus illum dolorem, laboriosam
-                        velit! Est voluptas ipsum architecto iure mollitia sint maxime totam numquam nemo odio earum atque
+                    <p class="ly-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sapiente enim eos
+                        libero est, expedita, unde
+                        magni odit consequatur repellat voluptatibus doloribus cum corporis minus illum dolorem,
+                        laboriosam
+                        velit! Est voluptas ipsum architecto iure mollitia sint maxime totam numquam nemo odio earum
+                        atque
                         veniam ea sapiente suscipit doloribus, consectetur id</p>
                 </div>
             </div>
             <div class="ly-padding-top-32">
                 <h2 class="body-title-mob">Lorem Ipsum</h2>
-                <p class="ly-medium" style="padding: 2% 4%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sapiente enim eos libero est, expedita, unde
+                <p class="ly-medium" style="padding: 2% 4%;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Hic sapiente enim eos libero est, expedita, unde
                     magni odit consequatur repellat voluptatibus doloribus cum corporis minus illum dolorem, laboriosam
                     velit! Est voluptas ipsum architecto iure mollitia sint maxime totam numquam nemo odio earum atque
-                    veniam ea sapiente suscipit doloribus, consectetur id!</p> 
+                    veniam ea sapiente suscipit doloribus, consectetur id!</p>
             </div>
         </section>
+        <%- include('./partials/footer.ejs') %>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="/js/bootstrap.min.js"></script>
@@ -103,6 +131,6 @@
                 duration: 1200,
             })
         </script>
-    </body>
+</body>
 
 </html>

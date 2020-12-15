@@ -1,12 +1,6 @@
 .container-box {
   position: relative;
 }
-.top-left-xl {
-  position: absolute;
-  top: 28%;
-  right: 1%;
-  width: 50%;
-}
 .top-left {
   position: absolute;
   top: 28%;
@@ -24,13 +18,6 @@
   top: 15%;
   right: 1%;
   width: 50%;
-}
-.landing-text-xl {
-  font-size: 110px;
-  color: #181147;
-  text-align: start;
-  font-weight: 600;
-  font-family: "Titillium web";
 }
 .landing-text {
   font-size: 90px;
@@ -50,13 +37,6 @@
   font-size: 60px;
   color: #181147;
   text-align: start;
-  font-weight: 600;
-  font-family: "Titillium web";
-}
-.body-title-xl {
-  font-size: 90px;
-  color: #181147;
-  padding-left: 10%;
   font-weight: 600;
   font-family: "Titillium web";
 }
@@ -80,4 +60,27 @@
   padding-left: 10%;
   font-weight: 600;
   font-family: "Titillium web";
+}
+.rocket-bgimg {
+  position: absolute;
+  bottom: 10%;
+  left: 16%;
+  z-index: 2;
+}
+.launch-bgimg {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  z-index: 1;
+}
+@media (min-width: 1700px) {
+  .top-left {
+    right: 1%;
+  }
+  .body-title {
+    font-size: 90px;
+  }
+  .landing-text {
+    font-size: 110px;
+  }
 }
