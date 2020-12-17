@@ -33,6 +33,11 @@ app.get('/rocket' ,(req,res) =>{
         title: 'Rocket-Parts'
     })
 });
+app.get('/lysr-1' ,(req,res) =>{
+    res.render('lysr-1' , {
+        title: 'Lysr-1'
+    })
+});
 app.get('/lyron' ,(req,res) =>{
     res.render('lyron' , {
         title: 'Lyron'

@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LYSR | <%=title%></title>
+    <title>LYSR | <%=title%>
+    </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/bootstrap4/css/bootstrap.min.css">
@@ -15,70 +16,101 @@
 
 <body>
     <%- include('./partials/nav.ejs') %>
-    <section class="ly-hide-small ly-hide-medium">
-        <div class="container-box">
-            <img src="image/landing.png" alt="" width="100%" height="auto">
-            <div class="top-left">
-                <div class="floating-div" data-aos='fade-down'>
-                    <h1 class="border-text">Lycan</h1>
-                    <div data-aos='fade-left' style="transition-delay: 100ms;">
-                        <h2 class="title">Space Research</h2>
+        <section class="ly-hide-small ly-hide-medium">
+            <div class="container-box">
+                <img src="image/landing.png" alt="" width="100%" height="auto">
+                <div class="top-left">
+                    <div class="floating-div" data-aos='fade-down'>
+                        <h1 class="border-text">Lycan</h1>
+                        <div data-aos='fade-left' style="transition-delay: 100ms;">
+                            <h2 class="title">Space Research</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-right" data-aos='slide-up' style="transition-delay: 200ms;">
+                    <h2 class="bottom-text">
+                        Go Beyond.
+                    </h2>
+                </div>
+            </div>
+            <div class="ly-container">
+                <div style="padding:3% 10%;">
+                    <h1 style="font-size:60px;color: #181118;font-weight: 700;padding-left: 5%;">Lorem Ipsum.</h1>
+                    <p class="ly-xlarge ly-padding-top-32">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Laborum consequuntur cumque nulla natus
+                        dignissimos aspernatur, labore nobis perferendis tempore nam impedit! Accusantium quis
+                        asperiores et quae eligendi iste iure ex exercitationem quidem necessitatibus debitis veritatis
+                        tempore magnam blanditiis, placeat expedita accusamus. Magni eum reiciendis eaque. Asperiores
+                        ratione quod animi corrupti.
+                    </p>
+                </div>
+            </div>
+            <div class="ly-container">
+                <div class="row">
+                    <div class="col-lg-6" style="padding-top: 5%;">
+                        <div style="padding: 0 10%;">
+                            <h1 style="font-size:60px;color: #181118;font-weight: 700;padding-left: 5%;">Lorem Ipsum.
+                            </h1>
+                            <p class="ly-xlarge ly-padding-top-64 ly-justify">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.
+                                Laborum consequuntur cumque nulla natus
+                                dignissimos aspernatur, labore nobis perferendis tempore nam impedit! Accusantium quis
+                                asperiores et quae eligendi iste iure ex exercitationem quidem necessitatibus debitis
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="image/section1.png" alt="" width="100%" height="auto">
                     </div>
                 </div>
             </div>
-            <div class="bottom-right" data-aos='slide-up' style="transition-delay: 200ms;">
-                <h2 class="bottom-text">
-                    Go Beyond.
-                </h2>
-            </div>
-        </div>
-    </section>
-    <section class="ly-hide-large ly-hide-xlarge ly-hide-small">
-        <div class="container-box">
-            <img src="image/mob/landing.png" alt="" width="100%" height="auto">
-            <div class="top-left">
-                <div class="floating-div">
-                    <h1 class="border-text">Lycan</h1>
-                    <div>
-                        <h2 class="title">Space Research</h2>
+        </section>
+        <section class="ly-hide-large ly-hide-xlarge ly-hide-small">
+            <div class="container-box">
+                <img src="image/mob/landing.png" alt="" width="100%" height="auto">
+                <div class="top-left">
+                    <div class="floating-div">
+                        <h1 class="border-text">Lycan</h1>
+                        <div>
+                            <h2 class="title">Space Research</h2>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="bottom-right">
-                <h2 class="bottom-text">
-                    Go Beyond.
-                </h2>
-            </div>
-        </div>
-    </section>
-    <section class="ly-hide-large ly-hide-xlarge ly-hide-medium">
-        <div class="container-box">
-            <img src="image/mob/landing.png" alt="" width="100%" height="auto">
-            <div class="top-left">
-                <div class="floating-div">
-                    <h1 class="border-text">Lycan</h1>
-                    <div>
-                        <h2 class="title">Space Research</h2>
-                    </div>
+                <div class="bottom-right">
+                    <h2 class="bottom-text">
+                        Go Beyond.
+                    </h2>
                 </div>
             </div>
-            <div class="bottom-right">
-                <h2 class="bottom-text">
-                    Go Beyond.
-                </h2>
+        </section>
+        <section class="ly-hide-large ly-hide-xlarge ly-hide-medium">
+            <div class="container-box">
+                <img src="image/mob/landing.png" alt="" width="100%" height="auto">
+                <div class="top-left">
+                    <div class="floating-div">
+                        <h1 class="border-text">Lycan</h1>
+                        <div>
+                            <h2 class="title">Space Research</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-right">
+                    <h2 class="bottom-text">
+                        Go Beyond.
+                    </h2>
+                </div>
             </div>
-        </div>
-    </section>
-    <%- include('./partials/footer.ejs') %>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1200,
-        })
-    </script>
+        </section>
+        <%- include('./partials/footer.ejs') %>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+            <script src="/js/bootstrap.min.js"></script>
+            <script src="/js/aos.js"></script>
+            <script>
+                AOS.init({
+                    duration: 1200,
+                })
+            </script>
 </body>
 
 </html>
