@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LYSR | <%=title%></title>
+    <title>LYSR | <%=title%>
+    </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="/bootstrap4/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/footer.css">
@@ -11,27 +12,51 @@
     <link rel="stylesheet" href="/css/nav.css">
 </head>
 <style>
-    body{
+    body {
         background-color: black;
     }
+
+    .box-container {
+        position: relative;
+    }
+
+    .top-left {
+        position: absolute;
+        top: 15%;
+        left: 10%;
+        width: 100%;
+    }
+    .top-left-mob {
+        position: absolute;
+        top: 25%;
+        left: 10%;
+        width: 80%;
+    }
 </style>
+
 <body>
     <%- include('./partials/nav.ejs') %>
-    <section class="ly-hide-small ly-hide-medium">
-        <div class="ly-image" style="padding-bottom: 100px;">
-            <img src="image/lyron.png" alt="" width="100%" height="auto">
-        </div>
-    </section>
+        <section class="ly-hide-small ly-hide-medium">
+            <div class="box-container ly-image" style="padding-bottom: 100px;">
+                <img src="image/lyron/lyron bg.png" alt="" width="100%" height="auto">
+                <div class="top-left text-flicker-in-glow">
+                    <img src="image/lyron/LYron.png" alt="" width="80%" height="auto">
+                </div>
+            </div>
+        </section>
 
-    <section class="ly-hide-xlarge ly-hide-large">
-        <div class="ly-image ly-padding-top-24">
-            <img src="image/mob/lyron.png" alt="" width="100%" height="auto">
-        </div>
-    </section>
-    <%- include('./partials/footer.ejs') %>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script src="js/nav.js"></script>
-    
+        <section class="ly-hide-xlarge ly-hide-large">
+            <div class="box-container ly-image" style="padding-bottom: 50px;">
+                <img src="image/lyron/lyron bg mob.png" alt="" width="100%" height="auto">
+                <div class="top-left-mob text-flicker-in-glow">
+                    <img src="image/lyron/LYron.png" alt="" width="100%" height="auto">
+                </div>
+            </div>
+        </section>
+        <%- include('./partials/footer.ejs') %>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+            <script src="js/nav.js"></script>
+
 </body>
 
 </html>
