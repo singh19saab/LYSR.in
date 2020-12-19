@@ -10,29 +10,30 @@
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/nav.css">
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .box-container {
+            position: relative;
+        }
+
+        .top-left {
+            position: absolute;
+            top: 15%;
+            left: 10%;
+            width: 100%;
+        }
+
+        .top-left-mob {
+            position: absolute;
+            top: 25%;
+            left: 10%;
+            width: 80%;
+        }
+    </style>
 </head>
-<style>
-    body {
-        background-color: black;
-    }
-
-    .box-container {
-        position: relative;
-    }
-
-    .top-left {
-        position: absolute;
-        top: 15%;
-        left: 10%;
-        width: 100%;
-    }
-    .top-left-mob {
-        position: absolute;
-        top: 25%;
-        left: 10%;
-        width: 80%;
-    }
-</style>
 
 <body>
     <%- include('./partials/nav.ejs') %>
