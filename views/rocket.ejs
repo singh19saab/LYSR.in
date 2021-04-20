@@ -12,9 +12,19 @@
     <link rel="stylesheet" href="/css/aos.css">
     <link rel="stylesheet" href="/css/nav.css">
     <link rel="stylesheet" href="/css/rocket.css">
+    <style>
+        #loading {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: #fff url(/image/Ripple-0.6s-200px.gif) no-repeat center center;
+            z-index: 9999;
+        }
+    </style>
 </head>
 
-<body>
+<body onload="myFunction()">
+    <div id="loading"></div>
     <!--navbar-->
     <%- include('./partials/nav.ejs') %>
         <!--xlarge screen-->
@@ -26,7 +36,7 @@
                 <img src="image/rocket/lines.png" alt="" width="10%" height="auto" class="line-bgimg"
                     data-aos=fade-up-right style="transition-delay: 800ms;">
                 <div class="top-left">
-                    <h1 class="landing-text">Rocket Parts</h1>
+                    <h1 class="landing-text">Rocket</h1>
                     <p class="ly-xxlarge">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sapiente enim eos
                         libero est, expedita, unde
                         magni odit consequatur repellat voluptatibus doloribus cum corporis minus illum dolorem,
@@ -46,7 +56,7 @@
                 <img src="image/rocket/lines.png" alt="" width="10%" height="auto" class="line-bgimg"
                     data-aos=fade-up-right style="transition-delay: 1000ms;">
                 <div class="top-left">
-                    <h1 class="landing-text">Rocket Parts</h1>
+                    <h1 class="landing-text">Rocket</h1>
                     <p class="ly-xlarge">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sapiente enim eos
                         libero est, expedita, unde
                         magni odit consequatur repellat voluptatibus doloribus cum corporis minus illum dolorem,
@@ -62,7 +72,7 @@
             <div class="container-box">
                 <img src="image/rocketpart.png" alt="" width="100%" height="auto">
                 <div class="top-left-tab">
-                    <h1 class="landing-text-tab">Rocket Parts</h1>
+                    <h1 class="landing-text-tab">Rocket</h1>
                     <p class="ly-large">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sapiente enim eos
                         libero est, expedita, unde
                         magni odit consequatur repellat voluptatibus doloribus cum corporis minus illum dolorem,
@@ -78,8 +88,9 @@
             <div class="container-box">
                 <img src="image/mob/rocket.png" alt="" width="100%" height="auto">
                 <div class="top-left-mob">
-                    <h1 class="landing-text-mob">Rocket Parts</h1>
-                    <p class="ly-large ly-padding-top-24">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sapiente enim eos
+                    <h1 class="landing-text-mob">Rocket</h1>
+                    <p class="ly-large ly-padding-top-24">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                        sapiente enim eos
                         libero est, expedita, unde
                         magni odit consequatur repellat voluptatibus doloribus cum corporis minus illum dolorem,
                         laboriosam
@@ -90,15 +101,19 @@
             </div>
         </section>
         <%- include('./partials/footer.ejs') %>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="/js/bootstrap.min.js"></script>
-        <script src="/js/aos.js"></script>
-        <script>
-            AOS.init({
-                duration: 1200,
-            })
-        </script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+            <script src="/js/bootstrap.min.js"></script>
+            <script src="/js/aos.js"></script>
+            <script>
+                AOS.init({
+                    duration: 1200,
+                })
+                var preloader = document.getElementById("loading")
+                function myFunction() {
+                    preloader.style.display = 'none';
+                };
+            </script>
 </body>
 
 </html>

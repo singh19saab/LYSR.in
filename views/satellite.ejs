@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LYSR | <%=title%></title>
+    <title>LYSR | <%=title%>
+    </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="/bootstrap4/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
@@ -11,73 +12,98 @@
     <link rel="stylesheet" href="/css/nav.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/satellite.css">
+    <style>
+        #loading {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: #fff url(/image/Ripple-0.6s-200px.gif) no-repeat center center;
+            z-index: 9999;
+        }
+    </style>
 </head>
 
-<body>
+<body onload="myFunction()">
+    <div id="loading"></div>
     <!--navbar-->
     <%- include('./partials/nav.ejs') %>
-    <!--xlarge screen-->
-    <section class="ly-hide-small ly-hide-medium ly-hide-large ">
-        <div class="container-box">
-            <img src="image/satellite/SATELLITE PARTS BACK GROUND.png" alt="" width="100%" height="auto">
-            <img src="image/satellite/new satellite.png" alt="" width="40%" height="auto" class="satellite-bgimg" data-aos=fade-up-left style="transition-delay: 300ms;">
-            <img src="image/satellite/new lines.png" alt="" width="5%" height="auto" class="line-bgimg" data-aos=fade-up-left style="transition-delay: 1000ms;">
-            <div class="top-left">
-                <h1 class="landing-text">Satellite Parts</h1>
-                <p class="ly-xxlarge">Satellite poses a significant role in the development of the country in numerous
-                    ways. LYSR in collaboration with startups, Defence organizations are making parts for satellite that
-                    are light weight yet study to withstand the harsh environment conditions in the outer space.</p>
+        <!--xlarge screen-->
+        <section class="ly-hide-small ly-hide-medium ly-hide-large ">
+            <div class="container-box">
+                <img src="image/satellite/SATELLITE PARTS BACK GROUND.png" alt="" width="100%" height="auto">
+                <img src="image/satellite/new satellite.png" alt="" width="40%" height="auto" class="satellite-bgimg"
+                    data-aos=fade-up-left style="transition-delay: 300ms;">
+                <img src="image/satellite/new lines.png" alt="" width="5%" height="auto" class="line-bgimg"
+                    data-aos=fade-up-left style="transition-delay: 1000ms;">
+                <div class="top-left">
+                    <h1 class="landing-text">Satellite</h1>
+                    <p class="ly-xxlarge">Satellite poses a significant role in the development of the country in
+                        numerous
+                        ways. LYSR in collaboration with startups, Defence organizations are making parts for satellite
+                        that
+                        are light weight yet study to withstand the harsh environment conditions in the outer space.</p>
+                </div>
             </div>
-        </div>
-    </section>
-    <!--large screen-->
-    <section class="ly-hide-small ly-hide-medium ly-hide-xlarge">
-        <div class="container-box">
-            <img src="image/satellite/SATELLITE PARTS BACK GROUND.png" alt="" width="100%" height="auto">
-            <img src="image/satellite/new satellite.png" alt="" width="40%" height="auto" class="satellite-bgimg" data-aos=fade-up-left style="transition-delay: 300ms;">
-            <img src="image/satellite/new lines.png" alt="" width="5%" height="auto" class="line-bgimg" data-aos=fade-up-left style="transition-delay: 1000ms;">
-            <div class="top-left">
-                <h1 class="landing-text">Satellite Parts</h1>
-                <p class="ly-xlarge">Satellite poses a significant role in the development of the country in numerous
-                    ways. LYSR in collaboration with startups, Defence organizations are making parts for satellite that
-                    are light weight yet study to withstand the harsh environment conditions in the outer space.</p>
+        </section>
+        <!--large screen-->
+        <section class="ly-hide-small ly-hide-medium ly-hide-xlarge">
+            <div class="container-box">
+                <img src="image/satellite/SATELLITE PARTS BACK GROUND.png" alt="" width="100%" height="auto">
+                <img src="image/satellite/new satellite.png" alt="" width="40%" height="auto" class="satellite-bgimg"
+                    data-aos=fade-up-left style="transition-delay: 300ms;">
+                <img src="image/satellite/new lines.png" alt="" width="5%" height="auto" class="line-bgimg"
+                    data-aos=fade-up-left style="transition-delay: 1000ms;">
+                <div class="top-left">
+                    <h1 class="landing-text">Satellite</h1>
+                    <p class="ly-xlarge">Satellite poses a significant role in the development of the country in
+                        numerous
+                        ways. LYSR in collaboration with startups, Defence organizations are making parts for satellite
+                        that
+                        are light weight yet study to withstand the harsh environment conditions in the outer space.</p>
+                </div>
             </div>
-        </div>
-    </section>
-    <!--tab screen-->
-    <section class="ly-hide-small ly-hide-large ly-hide-xlarge ">
-        <div class="container-box">
-            <img src="image/satellite.png" alt="" width="100%" height="auto">
-            <div class="top-left-tab">
-                <h1 class="landing-text-tab">Satellite Parts</h1>
-                <p class="ly-large">Satellite poses a significant role in the development of the country in numerous
-                    ways. LYSR in collaboration with startups, Defence organizations are making parts for satellite that
-                    are light weight yet study to withstand the harsh environment conditions in the outer space.</p>
+        </section>
+        <!--tab screen-->
+        <section class="ly-hide-small ly-hide-large ly-hide-xlarge ">
+            <div class="container-box">
+                <img src="image/satellite.png" alt="" width="100%" height="auto">
+                <div class="top-left-tab">
+                    <h1 class="landing-text-tab">Satellite</h1>
+                    <p class="ly-large">Satellite poses a significant role in the development of the country in numerous
+                        ways. LYSR in collaboration with startups, Defence organizations are making parts for satellite
+                        that
+                        are light weight yet study to withstand the harsh environment conditions in the outer space.</p>
+                </div>
             </div>
-        </div>
-    </section>
-    <!--mobile screen-->
-    <section class="ly-hide-large ly-hide-xlarge ly-hide-medium">
-        <div class="container-box">
-            <img src="image/mob/satellite.png" alt="" width="100%" height="auto">
-            <div class="top-left-mob">
-                <h1 class="landing-text-mob">Satellite Parts</h1>
-                <p class="ly-large ly-padding-top-32">Satellite poses a significant role in the development of the country in numerous
-                    ways. LYSR in collaboration with startups, Defence organizations are making parts for satellite that
-                    are light weight yet study to withstand the harsh environment conditions in the outer space.</p>
+        </section>
+        <!--mobile screen-->
+        <section class="ly-hide-large ly-hide-xlarge ly-hide-medium">
+            <div class="container-box">
+                <img src="image/mob/satellite.png" alt="" width="100%" height="auto">
+                <div class="top-left-mob">
+                    <h1 class="landing-text-mob">Satellite</h1>
+                    <p class="ly-large ly-padding-top-32">Satellite poses a significant role in the development of the
+                        country in numerous
+                        ways. LYSR in collaboration with startups, Defence organizations are making parts for satellite
+                        that
+                        are light weight yet study to withstand the harsh environment conditions in the outer space.</p>
+                </div>
             </div>
-        </div>
-    </section>
-    <%- include('./partials/footer.ejs') %>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1200,
-        })
-    </script>
+        </section>
+        <%- include('./partials/footer.ejs') %>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+            <script src="/js/bootstrap.min.js"></script>
+            <script src="/js/aos.js"></script>
+            <script>
+                AOS.init({
+                    duration: 1200,
+                })
+                var preloader = document.getElementById("loading")
+                function myFunction() {
+                    preloader.style.display = 'none';
+                };
+            </script>
 </body>
 
 </html>

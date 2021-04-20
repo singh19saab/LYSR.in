@@ -12,9 +12,19 @@
     <link rel="stylesheet" href="/css/aos.css">
     <link rel="stylesheet" href="/css/nav.css">
     <link rel="stylesheet" href="/css/launchpad.css">
+    <style>
+         #loading {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: #fff url(/image/Ripple-0.6s-200px.gif) no-repeat center center;
+            z-index: 9999;
+        }
+    </style>
 </head>
 
-<body>
+<body onload="myFunction()">
+    <div id="loading"></div>
     <!--navbar-->
     <%- include('./partials/nav.ejs') %>
         <!--xlarge screen-->
@@ -97,6 +107,10 @@
             AOS.init({
                 duration: 1200,
             })
+            var preloader = document.getElementById("loading")
+                function myFunction() {
+                    preloader.style.display = 'none';
+                };
         </script>
 </body>
 

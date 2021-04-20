@@ -18,21 +18,21 @@ app.get('/' ,(req,res) =>{
         title: 'Home'
     })
 });
-app.get('/satellite' ,(req,res) =>{
-    res.render('satellite' , {
-        title: 'Satellite Parts'
-    })
-});
-app.get('/launchpad' ,(req,res) =>{
-    res.render('launchpad' , {
-        title: 'Launchpad'
-    })
-})
-app.get('/rocket' ,(req,res) =>{
-    res.render('rocket' , {
-        title: 'Rocket-Parts'
-    })
-});
+// app.get('/satellite' ,(req,res) =>{
+//     res.render('satellite' , {
+//         title: 'Satellite Parts'
+//     })
+// });
+// app.get('/launchpad' ,(req,res) =>{
+//     res.render('launchpad' , {
+//         title: 'Launchpad'
+//     })
+// })
+// app.get('/rocket' ,(req,res) =>{
+//     res.render('rocket' , {
+//         title: 'Rocket-Parts'
+//     })
+// });
 app.get('/lysr-1' ,(req,res) =>{
     res.render('lysr-1' , {
         title: 'Lysr-1'
@@ -48,7 +48,12 @@ app.get('/contact' ,(req,res) =>{
         title: 'Contact'
     })
 });
-var port=process.env.port | 3005;
+app.get('*' ,(req,res) =>{
+    res.render('404' , {
+        title: '404'
+    })
+});
+var port = process.env.port || 80;
 
 app.listen(port, ()=>{
     console.log(`Example app listening at http://localhost:${port}`);
